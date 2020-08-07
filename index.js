@@ -39,7 +39,7 @@ class Marathon extends Activity
 };
 
 /**
- * Defini la vitesse maximale autorisee
+ * Defini la vitesse maximale autorisee (en metres/minutes)
  *
  * @param {Activity} obj Toute instance d'Activity ou d'instance d'objet heritant d'Activity (comme Marathon)
  * @return {number} max_speed vitesse maximale autorisee
