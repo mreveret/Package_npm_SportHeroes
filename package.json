@@ -1,0 +1,28 @@
+{
+	"name": "sport_heroes",
+		"version": "1.0.0",
+		"main": "index.js",
+		"scripts": {
+			"test": "qunit index.test.js"
+		},
+		"author": "Maxence Reveret",
+		"license": "MIT",
+		"dependencies": {
+			"qunit": "^2.10.1"
+		},
+		"devDependencies": {},
+		"description": "Package qui permet de manipuler des activites sportives et des parcours GPS",
+		"Keywords": [
+			"Javascript",
+		"npm",
+		"speed",
+		"sport",
+		"Activity",
+		"running",
+		"cycling",
+		"walking"
+		],
+		"publishConfig": {
+			"registry": "https://registry.npmjs.org"
+		}
+}
