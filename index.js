@@ -5,9 +5,12 @@
  * @this {TypeSport}
  * @param {string} sport Le type de sport
  * @param {number} gestion1 une regle de gestion , ici la vitesse max autorisee par exemple
+ * @throws Error un argument est undefined
  */
 class TypeSport {
 	constructor (sport,gestion1) {
+		if (sport === undefined)
+			throw new Error ('Missing argument\n');
 		this.sport = sport;
 		this.gestion1  =gestion1;
 	}
@@ -89,9 +92,9 @@ class Activity {
 		while (i < sport.length)
 		{
 			if (i === 0)
-			ret = ret.concat(' ',sport[i]);
+				ret = ret.concat(' ',sport[i]);
 			else
-			ret = ret.concat(', ',sport[i]);
+				ret = ret.concat(', ',sport[i]);
 			i++;
 		}
 		ret.concat('','\n');
@@ -147,7 +150,6 @@ function isValid (obj)
 		return 'Speed is invalid\n';
 	return 'Everything is valid\n';
 }
-
 
 
 module.exports.isValid = isValid;
